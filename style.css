@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 9vh;
+    z-index: 100;
+    padding: .5rem 5rem;
+    background: rgba(73, 52, 52, 0.6) !important;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0);
+    background: black;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color:  #00b894 !important;
+}
+#navbarSupportedContent a{
+    margin-right: 40px;
+    font-weight:500;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid  #00b894;
+}
+#navbarSupportedContent button{
+    background: #00b894;
+    width: 5rem;
+    border-radius: 15px;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* *****************************Home**************************** */
+
+#home{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(images/ind.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    margin-top: -50px;
+}
+#home h3{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px rgb(245, 154, 18);
+}
+#home h1{
+    color: #fff;
+    margin: 30px 0 20px 0;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 12px 1px 5px rgb(37, 11, 153);
+    text-transform: uppercase;
+}
+#home p{
+    color: #fff;
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background : green !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+
+
+#home a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    display: inline-flexbox;
+    margin-right: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+
+}
+
+#home .bt1:hover{
+    background: #00b894;
+    color:white
+}
+
+#home .bt1{
+    
+    background:#fff;
+    color: #000;
+}
+
+#home .bt2:hover{
+    background: white;
+    color: #00b894;
+}
+#home .bt2{
+    background: #00b894;
+    color: white;
+}
+
+
+
+/* ******************************About**************************** */
+
+#about{
+    background : linear-gradient(to right,#FF9933,#9be8e2, #138808 100%)
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color:white;
+}
+#about p{
+    color: white;
+}
+
+/* *****************************Products************************* */
+
+#product{
+    background :#e5e5e5;
+}
+#product h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#product img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    background : #e5e5e5 !important;
+    border :none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition: .2s;
+}
+
+/* *******************************Contact***************************** */
+
+#contact{
+    background : linear-gradient(to right,#FF9933,#FFFFFF, #138808,     #7171eb 100%)
+}
+
+#contact img{
+    height: 100%;
+}
+.box{
+    width: 80% !important;
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 20px 0px;
+}
+#contact textarea{
+    margin: 20px 0px;
+}
+
+
+/* **************************City Animations*************************** */
+
+.change_content:after{
+    content: '';
+    animation: changetext 4s infinite linear;
+    color: #00b894;
+}
+
+
+
+@keyframes changetext {
+    0% {
+      content: "Darjeeling";
+    }
+    20% {
+      content: "Agra";
+    }
+    35% {
+      content: "Jaipur";
+    }
+    60% {
+      content: "kerala";
+    }
+    80% {
+      content: "delhi";
+    }
+    100% {
+      content: "Mumbai";
+    }
+}
+
+
+
+/* *****************************Media Query****************************** */
+
+
+@media screen and (max-width: 767px){
+    
+   /* !!!!!!!!!!!!!!!!!!!!!!!  tables  !!!!!!!!!!!!!!!!!!!!!!!! */
+    .navbar{
+        letter-spacing: 0.1rem;
+        padding: 10px 0;
+    }
+
+}
+.heading-content h5{
+    font-size: 3em;
+}
+
+.heading-content h1{
+    font-size: 3em;
+
+}
+
+.heading-content p{
+    font-size: 0.9em;
+}
+
+
+@media screen and (max-width: 479px){
+
+    /* !!!!!!!!!!!!!!!!!!!!!!!  smartphone !!!!!!!!!!!!!!!!!!!!!!!! */
+
+    .navbar{
+        letter-spacing: 0.1rem;
+        padding: 1px 0;
+    }
+
+.heading-content h5{
+    font-size: 2em;
+}
+
+.heading-content h1{
+    font-size: 2em;
+
+}
+
+.heading-content p{
+    font-size: 0.7em;
+}
+
+#Contact .post-heading h3{
+    font-size: 2em ;
+}
+
+}

@@ -35,8 +35,9 @@
 }
 #navbarSupportedContent button{
     background: #00b894;
-    width: 5rem;
-    border-radius: 15px;
+    width: 6rem;
+    border-radius: 30px;
+
 }
 section{
     width: 100%;
